@@ -6,7 +6,7 @@ import {
   BY_NAME,
 } from "./types";
 import axios from "axios";
-const URL_BASE = "http://localhost:3001";
+const URL_BASE = "https://food-api-sx47.onrender.com:3001";
 
 export const getAllRecipes = () => {
   return async (dispatch) => {
