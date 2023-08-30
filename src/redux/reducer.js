@@ -63,7 +63,7 @@ const rootReducer = (state = initialState, { type, payload }) => {
         ...state,
         recipes: sortedCharacters,
       };
-
+    //
     /*   case SOURCE_FILTER:
       if (state.selectedDietType !== "All") {
         const allRecipesCopy = [...state.allRecipes];
