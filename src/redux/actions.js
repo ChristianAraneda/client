@@ -19,7 +19,7 @@ export function getRecipesByName(payload) {
   return async function (dispatch) {
     try {
       const response = await axios.get(`${URL_BASE}/recipes?name=${payload}`);
-      console.log(response.data);
+      console.log("Mira esto", response.data);
       return dispatch({ type: BY_NAME, payload: response.data });
     } catch {
       return alert("Recipe Not Found");
